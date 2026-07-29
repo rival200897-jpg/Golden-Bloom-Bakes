@@ -20,7 +20,7 @@ function handleContactSubmit(event) {
   };
 
   emailjs
-    .send("service_ub1ad58", "template_jtu8eb8", templateParams)
+    .send("service_ub1ad58", "xs331v5", templateParams)
     .then(function () {
       form.innerHTML =
         '<div class="success-message">&#9989; Message sent! We\'ll get back to you soon.</div>';
@@ -56,7 +56,7 @@ function handleOrderSubmit(event) {
   };
 
   emailjs
-    .send("service_ub1ad58", "template_jtu8eb8", templateParams)
+    .send("service_ub1ad58", "xs331v5", templateParams)
     .then(function () {
       form.innerHTML =
         '<div class="success-message">&#9989; Order placed! We\'ll confirm shortly.</div>';
