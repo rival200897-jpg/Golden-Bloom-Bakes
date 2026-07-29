@@ -13,7 +13,7 @@
   <nav>
     <div class="logo">Golden Bloom Bakes</div>
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="order.html">Order</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -110,11 +110,13 @@
         <p>⏰ Orders taken 48hrs in advance</p>
       </div>
       <div class="contact-form">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <input type="text" placeholder="Type of Cake">
-        <textarea placeholder="Tell us about your order..."></textarea>
-        <button type="submit">Send Message 💌</button>
+        <form id="contact-form" onsubmit="handleContactSubmit(event)">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="cake_type" placeholder="Type of Cake">
+          <textarea name="message" placeholder="Tell us about your order..." required></textarea>
+          <button type="submit">Send Message 💌</button>
+        </form>
       </div>
     </div>
   </section>
@@ -130,7 +132,7 @@
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="order.html">Order</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -148,5 +150,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -28,27 +28,28 @@
   <section class="order-section">
     <div class="order-form">
       <h2>Order Details 💝</h2>
+      <form id="order-form" onsubmit="handleOrderSubmit(event)">
 
       <div class="form-row">
         <div class="form-group">
           <label>Your Name *</label>
-          <input type="text" placeholder="Full name">
+          <input type="text" name="name" placeholder="Full name" required>
         </div>
         <div class="form-group">
           <label>Phone Number *</label>
-          <input type="tel" placeholder="Your phone number">
+          <input type="tel" name="phone" placeholder="Your phone number" required>
         </div>
       </div>
 
       <div class="form-group">
         <label>Email Address *</label>
-        <input type="email" placeholder="Your email">
+        <input type="email" name="email" placeholder="Your email" required>
       </div>
 
       <div class="form-row">
         <div class="form-group">
           <label>Cake Type *</label>
-          <select>
+          <select name="cake_type" required>
             <option value="">Select cake type</option>
             <option>Classic Birthday Cake</option>
             <option>Wedding Cake</option>
@@ -64,7 +65,7 @@
         </div>
         <div class="form-group">
           <label>Number of Servings *</label>
-          <select>
+          <select name="servings" required>
             <option value="">Select servings</option>
             <option>10-15 people</option>
             <option>15-25 people</option>
@@ -78,7 +79,7 @@
       <div class="form-row">
         <div class="form-group">
           <label>Flavour *</label>
-          <select>
+          <select name="flavour">
             <option value="">Select flavour</option>
             <option>Vanilla</option>
             <option>Chocolate</option>
@@ -91,13 +92,13 @@
         </div>
         <div class="form-group">
           <label>Delivery Date *</label>
-          <input type="date">
+          <input type="date" name="delivery_date">
         </div>
       </div>
 
       <div class="form-group">
         <label>Delivery or Pickup?</label>
-        <select>
+        <select name="delivery_method">
           <option>Pickup</option>
           <option>Local Delivery</option>
         </select>
@@ -105,15 +106,16 @@
 
       <div class="form-group">
         <label>Cake Message (if any)</label>
-        <input type="text" placeholder="e.g. Happy Birthday Sarah!">
+        <input type="text" name="cake_message" placeholder="e.g. Happy Birthday Sarah!">
       </div>
 
       <div class="form-group">
         <label>Special Requests / Design Details</label>
-        <textarea placeholder="Tell us about your dream cake! Colors, theme, decorations, dietary requirements..."></textarea>
+        <textarea name="instructions" placeholder="Tell us about your dream cake! Colors, theme, decorations, dietary requirements..."></textarea>
       </div>
 
-      <button class="submit-btn" onclick="submitOrder()">Place My Order 🎂</button>
+      <button class="submit-btn" type="submit">Place My Order 🎂</button>
+      </form>
       <p class="order-note">⏰ Please order at least 48 hours in advance. We'll confirm your order within 24 hours.</p>
     </div>
   </section>
@@ -146,11 +148,7 @@
     </div>
   </footer>
 
-  <script>
-    function submitOrder() {
-      alert('Thank you for your order! 🎂 We will contact you within 24 hours to confirm your order details.')
-    }
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
