@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - Golden Bloom Bakes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Golden Bloom Bakes</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="order.html" class="order-btn">Order Now 🎂</a></li>
+    </ul>
+  </nav>
+
+  <section class="order-hero">
+    <h1>Place Your Order 🎂</h1>
+    <p class="section-sub">Fill in the details below and we'll be in touch within 24 hours!</p>
+  </section>
+
+  <section class="order-section">
+    <div class="order-form">
+      <h2>Order Details 💝</h2>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" placeholder="Full name">
+        </div>
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" placeholder="Your phone number">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email" placeholder="Your email">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Cake Type *</label>
+          <select>
+            <option value="">Select cake type</option>
+            <option>Classic Birthday Cake</option>
+            <option>Wedding Cake</option>
+            <option>Fully Custom Cake</option>
+            <option>Baby Shower Cake</option>
+            <option>Graduation Cake</option>
+            <option>Anniversary Cake</option>
+            <option>Cupcakes</option>
+            <option>Cookie Box</option>
+            <option>Sweet Gift Box</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Number of Servings *</label>
+          <select>
+            <option value="">Select servings</option>
+            <option>10-15 people</option>
+            <option>15-25 people</option>
+            <option>25-40 people</option>
+            <option>40-60 people</option>
+            <option>60+ people</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Flavour *</label>
+          <select>
+            <option value="">Select flavour</option>
+            <option>Vanilla</option>
+            <option>Chocolate</option>
+            <option>Strawberry</option>
+            <option>Red Velvet</option>
+            <option>Lemon</option>
+            <option>Carrot</option>
+            <option>Custom flavour</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Delivery Date *</label>
+          <input type="date">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Delivery or Pickup?</label>
+        <select>
+          <option>Pickup</option>
+          <option>Local Delivery</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Cake Message (if any)</label>
+        <input type="text" placeholder="e.g. Happy Birthday Sarah!">
+      </div>
+
+      <div class="form-group">
+        <label>Special Requests / Design Details</label>
+        <textarea placeholder="Tell us about your dream cake! Colors, theme, decorations, dietary requirements..."></textarea>
+      </div>
+
+      <button class="submit-btn" onclick="submitOrder()">Place My Order 🎂</button>
+      <p class="order-note">⏰ Please order at least 48 hours in advance. We'll confirm your order within 24 hours.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Golden Bloom Bakes</h3>
+        <p>Handcrafted with love for your most special moments.</p>
+        <p class="tagline">✨ with heavenly taste ✨</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Follow Us</h4>
+        <p>📸 @goldenbloombakes</p>
+        <p>Facebook: Golden Bloom Bakes</p>
+        <p>TikTok: @goldenbloombakes</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Golden Bloom Bakes. All rights reserved. Made with 💝</p>
+    </div>
+  </footer>
+
+  <script>
+    function submitOrder() {
+      alert('Thank you for your order! 🎂 We will contact you within 24 hours to confirm your order details.')
+    }
+  </script>
+
+</body>
+</html>
